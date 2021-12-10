@@ -25,7 +25,7 @@
       <div class="container-fluid">
         <div class="row mb-3 border-bottom">
           <div class="col-10">
-            <p class="text-start fs-5">優惠劵抽獎</p>
+            <p class="text-start fs-5">優惠劵</p>
           </div>
           <div class="col-2">
             <button type="button" class="btn-close" aria-label="Close"></button>
@@ -34,36 +34,40 @@
 
         <div class="row">
           <div class="col">
-            <p class="fs-5 m-0 text-start">抽獎活動標題</p>
-            <p class="fs-6 fw-light text-start">活動截止2021.12.23 23:59:59</p>
-            <img src="img/1080.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+            <h5 class="my-5">請輸入四位數字的核銷碼：</h5>
+            <input class="form-control form-control-lg" type="text">
           </div>
         </div>
       </div>
     </div>
 
     <div class="downBox">
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary container-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        參加抽獎
-      </button>
+      <div class="d-grid gap-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary container-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          確定
+        </button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body text-center">
-              <img src="img/42.png" class="img-fluid rounded mx-auto d-block" alt="">
-              <p class="fs-4 m-0">抽獎中...</p>
-              <p class="fs-6 fw-light">抽獎中，請稍候。</p>
-            </div>
-            <!-- Demo示意流程，套程式請移除 -->
-            <div class="modal-footer" style="border:0; justify-content: space-between;">
-              <a href='lose.html' class="btn btn-primary" title="Demo示意流程，套程式請移除">未中獎</a>
-              <a href='win.html' class="btn btn-primary" title="Demo示意流程，套程式請移除">中獎</a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5">
+              <div class="modal-body text-center">
+                <p class="fs-4">核銷碼輸入錯誤</p>
+                <p class="fs-6 fw-light">請確認正確的核銷碼後重新輸入。</p>
+              </div>
+
+              <div class="modal-footer d-block" style="border:0;">
+                <button type="button" class="btn btn-primary container-fluid" data-bs-dismiss="modal">確定</button>
+              </div>
             </div>
           </div>
         </div>
+
+        <a href='coupon.html' class="btn btn-outline-primary container-fluid">取消</a>
+
+        <!-- Demo流程，套程式請刪除 -->
+        <a href='done.html' class="btn btn-outline-primary container-fluid" title='Demo流程，套程式請刪除'>核銷馬正確</a>
       </div>
     </div>
 

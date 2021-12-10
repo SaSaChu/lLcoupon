@@ -49,18 +49,16 @@
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: block;">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body text-center">
               <img src="img/42.png" class="img-fluid rounded mx-auto d-block" alt="">
-              <p class="fs-4 m-0">抽獎中...</p>
-              <p class="fs-6 fw-light">抽獎中，請稍候。</p>
+              <p class="fs-4 m-0">可惜...沒有抽中！</p>
+              <p class="fs-6 m-0 fw-light">感謝您參加抽獎。歡迎至官方帳號看更多活動訊息。</p>
             </div>
-            <!-- Demo示意流程，套程式請移除 -->
-            <div class="modal-footer" style="border:0; justify-content: space-between;">
-              <a href='lose.html' class="btn btn-primary" title="Demo示意流程，套程式請移除">未中獎</a>
-              <a href='win.html' class="btn btn-primary" title="Demo示意流程，套程式請移除">中獎</a>
+            <div class="modal-footer" style="border:0;">
+              <a href='over.html' class="btn btn-primary container-fluid">確定</a>
             </div>
           </div>
         </div>
@@ -68,5 +66,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <div class="modal-backdrop fade show"></div>
   </body>
 </html>
